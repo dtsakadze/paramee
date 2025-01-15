@@ -1,6 +1,5 @@
 require:
   - rubocop-rails
-  - rubocop-minitest
 
 AllCops:
   TargetRailsVersion: 6.0
