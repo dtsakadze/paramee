@@ -28,4 +28,9 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency 'rails', '>= 6.0.0'
+
+  spec.add_development_dependency 'rubocop-minitest', '>= 0.36.0'
+  spec.add_development_dependency 'rubocop-rails', '>= 2.28.0'
 end
