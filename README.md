@@ -15,13 +15,13 @@ $ gem UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
 ```ruby
 class SampleController < ApplicationController
   def filter
-      param :q,     String,  required: false
-      param :sort,  String,  required: false
-      param :order, String,  in: %w[asc desc], default: 'asc'
-      param :items, Integer, required: true
+    param :q,     String,  required: false
+    param :sort,  String,  required: false
+    param :order, String,  in: %w[asc desc], default: 'asc'
+    param :items, Integer, required: true
 
-      # Validates parameters and sets them to the params hash
-      # (params[:q], params[:sort], params[:items])
+    # Validates parameters and sets them to the params hash
+    # (params[:q], params[:sort], params[:items])
   end
 end
 ```
