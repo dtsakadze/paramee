@@ -38,6 +38,14 @@ end
 - `Array`
 - `Hash`
 
+### Options
+
+| name       | description                         | example         |
+| ---------- | ----------------------------------- | --------------- |
+| `required` | Set parameter required or optional. | `true`, `false` |
+| `default`  | Default value for the parameter     | Any value       |
+| `in`       | Accept only specified values.       | `%w[asc desc]`  |
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
