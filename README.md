@@ -17,6 +17,7 @@ class SampleController < ApplicationController
     def filter
         param :q,     String,  required: false
         param :sort,  String,  required: false
+        param :order, String,  in: %w[asc desc], default: 'asc'
         param :items, Integer, required: true
 
         # Validates parameters and sets them to the params hash
@@ -24,6 +25,18 @@ class SampleController < ApplicationController
     end
 end
 ```
+
+### Parameter Data Types
+
+- `String`
+- `Integer`
+- `Float`
+- `Boolean`
+- `Date`
+- `Time`
+- `Datetime`
+- `Array`
+- `Hash`
 
 ## License
 
