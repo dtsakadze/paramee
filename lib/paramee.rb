@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
-require_relative 'paramee/version'
+require 'active_support/core_ext/object/blank'
 
-module Paramee
-  class Error < StandardError; end
-  # Your code goes here...
+require_relative 'paramee/version'
+require_relative 'paramee/param'
+require_relative 'paramee/parameter'
+
+ActiveSupport.on_load(:action_controller) do
+  include Paramee
 end
